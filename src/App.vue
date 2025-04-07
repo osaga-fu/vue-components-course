@@ -1,6 +1,8 @@
 <script setup>
+import { ref } from 'vue';
 import CoffeePlan from './components/CoffeePlan.vue';
 
+const plans = ref(['The Hacker', 'The Single', 'The Double'])
 
 </script>
 
@@ -13,9 +15,7 @@ import CoffeePlan from './components/CoffeePlan.vue';
     </h2>
 
     <div class="plans">
-      <CoffeePlan name="The Hacker" />
-      <CoffeePlan name="The Single" />
-      <CoffeePlan name="The Double" />
+      <CoffeePlan v-for="plan in plans" :key="plan" :name="plan" />
     </div>
   </div>
 </template>
