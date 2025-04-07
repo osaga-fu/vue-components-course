@@ -1,5 +1,6 @@
 <script setup>
 import FancyButton from './components/FancyButton.vue'
+import GithubCard from './components/GithubCard.vue';
 import PlanPicker from './components/PlanPicker.vue'
 </script>
 
@@ -19,6 +20,9 @@ import PlanPicker from './components/PlanPicker.vue'
       </template>
       Submit
     </FancyButton>
+
+    <GithubCard username="osaga-fu"/>
+    <GithubCard username="danielkellyio"/>
   </div>
 </template>
 
