@@ -1,9 +1,12 @@
 <script setup>
-import { ref } from 'vue';
-import CoffeePlan from './components/CoffeePlan.vue';
+import { ref } from 'vue'
+import CoffeePlan from './components/CoffeePlan.vue'
 
-const plans = ref(['The Hacker', 'The Single', 'The Double'])
-
+const plans = ref([
+  { name: 'The Hacker', price: 10 },
+  { name: 'The Single', price: 8 },
+  { name: 'The Double', price: 15 },
+])
 </script>
 
 <template>
@@ -15,7 +18,7 @@ const plans = ref(['The Hacker', 'The Single', 'The Double'])
     </h2>
 
     <div class="plans">
-      <CoffeePlan v-for="plan in plans" :key="plan" :name="plan" />
+      <CoffeePlan v-for="plan in plans" :key="plan" :name="plan.name" :price="plan.price" />
     </div>
   </div>
 </template>

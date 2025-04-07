@@ -1,11 +1,14 @@
 <script setup>
-defineProps(['name'])
+defineProps({
+  name: { type: String, default: 'Default Plan' },
+  price: { type: Number, required: true },
+})
 </script>
 
 <template>
   <div class="plan">
     <div class="description">
-      <span class="title">{{ name }}</span>
+      <span class="title">{{ name }} - {{ price }} $</span>
     </div>
   </div>
 </template>
