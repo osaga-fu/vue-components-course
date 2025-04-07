@@ -1,4 +1,5 @@
 <script setup>
+import FancyButton from './components/FancyButton.vue'
 import PlanPicker from './components/PlanPicker.vue'
 </script>
 
@@ -11,6 +12,13 @@ import PlanPicker from './components/PlanPicker.vue'
     </h2>
 
     <PlanPicker />
+
+    <FancyButton>
+      <template #icon="{ hover }">
+        {{ hover ? '👋' : '💪' }}
+      </template>
+      Submit
+    </FancyButton>
   </div>
 </template>
 
