@@ -1,7 +1,12 @@
 <script setup>
-
 const props = defineProps({
-  name: { type: String, default: 'Default Plan' },
+  name: {
+    type: String,
+    default: 'Default Plan',
+    validator(value) {
+      return value.startsWith('The')
+    },
+  },
   price: { type: Number, required: true },
   selected: { type: Boolean, default: false },
 })
