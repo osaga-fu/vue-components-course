@@ -29,7 +29,6 @@ main {
 }
 
 hr {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
   overflow: visible;
@@ -118,7 +117,6 @@ textarea {
 
 [type='checkbox'],
 [type='radio'] {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -170,7 +168,6 @@ html {
 *,
 :after,
 :before {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -324,7 +321,6 @@ body {
   margin-right: auto;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  /* width: 620px */
 }
 
 h1.title {
@@ -360,7 +356,6 @@ h2.subtitle {
   position: absolute;
   height: 100%;
   background-color: #09848d;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -379,8 +374,6 @@ span#logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -403,7 +396,6 @@ span#logo {
   border-width: 2px;
   border-color: #09848d;
   letter-spacing: 0.2;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -431,7 +423,6 @@ span#logo {
   border-width: 2px;
   border-color: #09848d;
   letter-spacing: 0.2;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -448,17 +439,13 @@ span#logo {
 
 .plans .plan {
   background-color: #fff;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.25rem;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   cursor: pointer;
   position: relative;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -473,11 +460,7 @@ span#logo {
   width: 20%;
   font-size: 1.875rem;
   font-weight: 500;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   background-color: #7dacaf;
   color: #136268;
@@ -530,9 +513,6 @@ span#logo {
 
 .plans .active-plan,
 .plans .plan:hover {
-  -webkit-box-shadow:
-    0 15px 30px 0 rgba(0, 0, 0, 0.11),
-    0 5px 15px 0 rgba(0, 0, 0, 0.08);
   box-shadow:
     0 15px 30px 0 rgba(0, 0, 0, 0.11),
     0 5px 15px 0 rgba(0, 0, 0, 0.08);
@@ -561,18 +541,13 @@ form.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .form-group {
   width: 100%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin: 0.5rem 2rem;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
@@ -585,8 +560,6 @@ form.form {
 }
 
 .form-group .form-control {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
   border-radius: 0.25rem;
   padding: 0.5rem 0.75rem;
@@ -610,7 +583,6 @@ form.form {
 
 .form-group .form-control:focus {
   background-color: #fff;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   outline: none;
 }
@@ -619,9 +591,6 @@ form.form {
   background-color: #fff;
   border-radius: 0.5rem;
   padding: 1.5rem;
-  -webkit-box-shadow:
-    0 15px 30px 0 rgba(0, 0, 0, 0.11),
-    0 5px 15px 0 rgba(0, 0, 0, 0.08);
   box-shadow:
     0 15px 30px 0 rgba(0, 0, 0, 0.11),
     0 5px 15px 0 rgba(0, 0, 0, 0.08);
@@ -698,16 +667,11 @@ form.form {
 }
 
 .loading-wrapper .loader {
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 0.5rem;
   margin-left: auto;
   margin-right: auto;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   border-width: 2px;
   border-color: #09848d;
