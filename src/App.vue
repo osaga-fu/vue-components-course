@@ -1,6 +1,7 @@
 <script setup>
+import AppAlert from './components/AppAlert.vue'
 import FancyButton from './components/FancyButton.vue'
-import GithubCard from './components/GithubCard.vue';
+import GithubCard from './components/GithubCard.vue'
 import PlanPicker from './components/PlanPicker.vue'
 </script>
 
@@ -21,8 +22,15 @@ import PlanPicker from './components/PlanPicker.vue'
       Submit
     </FancyButton>
 
-    <GithubCard username="osaga-fu"/>
-    <GithubCard username="danielkellyio"/>
+    <GithubCard username="osaga-fu" />
+    <GithubCard username="danielkellyio" />
+
+    <div class="p-5">
+      <AppAlert errorType="info">New Software Update Available</AppAlert>
+      <AppAlert errorType="success">Your purchased has been confirmed</AppAlert>
+      <AppAlert errorType="warning">Warning: Invalid email address</AppAlert>
+      <AppAlert errorType="error">Error! Task failed sucessfully</AppAlert>
+    </div>
   </div>
 </template>
 
